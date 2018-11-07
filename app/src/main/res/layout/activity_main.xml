@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_emberValasztas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="A Te választásod"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_gepValasztas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_emberValasztas"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="268dp"
+        android:text="A gép válaszása"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/iv_emberValasztas"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/iv_gepValasztas"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="247dp"
+        app:srcCompat="@drawable/paper" />
+
+    <Button
+        android:id="@+id/b_ko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginBottom="52dp"
+        android:layout_toStartOf="@+id/iv_emberValasztas"
+        android:text="Kő" />
+
+    <Button
+        android:id="@+id/b_papir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/b_ko"
+        android:layout_centerHorizontal="true"
+        android:text="Papír" />
+
+    <Button
+        android:id="@+id/b_ollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b_ko"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="0dp"
+        android:text="olló" />
+
+    <TextView
+        android:id="@+id/tv_eredmeny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="Eredmény: Ember: 0 Robot:0"
+        android:textSize="18dp" />
+</RelativeLayout>
